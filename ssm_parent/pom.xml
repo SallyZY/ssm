@@ -7,9 +7,15 @@
     <groupId>com.zy</groupId>
     <artifactId>ssm_parent</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <modules>
-
+        <module>../ssm_common</module>
+        <module>../ssm_manager</module>
+        <module>../ssm_rest</module>
+        <module>../ssm_sso</module>
+        <module>../ssm_redis</module>
+        <module>../ssm_search</module>
     </modules>
 
     <properties>
