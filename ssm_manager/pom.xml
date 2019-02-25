@@ -13,6 +13,26 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>ssm_manager</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>ssm_manager_pojo</module>
+        <module>ssm_manager_mapper</module>
+        <module>ssm_manager_service</module>
+        <module>ssm_manager_web</module>
+    </modules>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <port>8080</port>
+                    <path>/</path>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
